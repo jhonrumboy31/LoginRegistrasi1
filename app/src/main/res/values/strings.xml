@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">cobalogin</string>
+    <string name="daftar_akun">Daftar Akun</string>
+    <string name="nama_lengkap">Nama Lengkap</string>
+    <string name="daftar">Daftar</string>
+    <string name="password">Password</string>
+</resources>
