@@ -10,8 +10,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Selamat Datang"
-        android:textSize="24sp"
+        android:textSize="26sp"
         android:textStyle="bold"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Silakan pilih menu di bawah"
+        android:textSize="14sp"
         android:layout_marginBottom="40dp"/>
 
     <Button
@@ -19,12 +26,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Login"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="12dp"/>
 
     <Button
         android:id="@+id/btnRegister"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Daftar"/>
+        android:text="Register"/>
 
 </LinearLayout>

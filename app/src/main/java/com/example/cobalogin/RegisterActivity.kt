@@ -1,11 +1,12 @@
-package com.example.loginregistrasi
+package com.example.cobalogin
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.example.cobalogin.R
 
 class RegisterActivity : AppCompatActivity() {
 
@@ -17,7 +18,9 @@ class RegisterActivity : AppCompatActivity() {
         val etEmail = findViewById<EditText>(R.id.etEmail)
         val etPassword = findViewById<EditText>(R.id.etPassword)
         val btnDaftar = findViewById<Button>(R.id.btnDaftar)
+        val tvKeLogin = findViewById<TextView>(R.id.tvKeLogin)
 
+        // Tombol Daftar
         btnDaftar.setOnClickListener {
             val nama = etNama.text.toString()
             val email = etEmail.text.toString()
@@ -28,6 +31,12 @@ class RegisterActivity : AppCompatActivity() {
             } else {
                 Toast.makeText(this, "Registrasi berhasil! Halo $nama", Toast.LENGTH_SHORT).show()
             }
+        }
+
+        // Explicit Intent ke LoginActivity
+        tvKeLogin.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
         }
     }
 }

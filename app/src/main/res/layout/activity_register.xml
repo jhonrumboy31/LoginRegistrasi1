@@ -10,7 +10,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Daftar Akun"
-        android:textSize="22sp"
+        android:textSize="24sp"
         android:textStyle="bold"
         android:layout_marginBottom="24dp"/>
 
@@ -45,6 +45,14 @@
         android:id="@+id/btnDaftar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Daftar"/>
+        android:text="Daftar"
+        android:layout_marginBottom="16dp"/>
+
+    <TextView
+        android:id="@+id/tvKeLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudah punya akun? Login di sini"
+        android:textColor="#1976D2"/>
 
 </LinearLayout>
